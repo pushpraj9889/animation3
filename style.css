@@ -1,0 +1,40 @@
+.section{
+    height: 200px;
+     width: 300px;
+    margin:50px auto;
+ 
+     
+}
+ div{
+     width:40px;
+     height: 30px;
+     border: 2px solid red;   
+     border-radius: 10px;
+     margin:10px;
+     background-color: yellow;
+     animation: 2s pushpraj infinite;
+ }
+ @keyframes pushpraj {
+     50%{
+         width:100%;
+     }
+     78%{
+         background-color: violet;
+         height: 30px;
+     }
+
+
+     
+ }
+ div:nth-of-type(1)
+ {
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ }
+ div:nth-of-type(2)
+ {
+     animation-timing-function: ease-in;
+ }
+ div:nth-of-type(4)
+ {
+     animation-timing-function: ease-out;
+ }
